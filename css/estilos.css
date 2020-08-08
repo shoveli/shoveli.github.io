@@ -8,20 +8,17 @@
            display: flex;
            flex-direction: column;
            justify-content: center;
-            width: 100%;
+           width: 100%;
            height: 300px;
            margin: 0 auto;
            contain: content;
-           
        }
        
        .imagenInicio {
            position: absolute;
            z-index: 1;
-           
-           width: 100%;
-           height: 800px;
-           
+           max-width: 100%;
+           height: auto;
        }
        
        .tituloHome {
@@ -73,8 +70,6 @@
        
        .contenedorColumnas {
            display: grid;
-           grid-row: 1366px;
-           grid-column: 500px;
            width: 100%;
            justify-content: space-evenly;
            margin-top: 30px;
