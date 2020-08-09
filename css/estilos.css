@@ -77,10 +77,6 @@
        
        .columna {
            grid-row-start: 1;
-           text-align: center;
-           font-size: 30px;
-           text-decoration-line: none;
-           color: snow;
            width: 300px;
            height: 250px;
            border-top-right-radius: 10px;
@@ -92,7 +88,9 @@
        
        #columnaUno {
            background-image: url(../img/menu.jpg);
-           background-size: 380px;
+           max-width: 100%;
+           height: auto;
+           /* background-size: 380px; */
        }
        
        #columnaDos {
@@ -120,7 +118,7 @@
            margin: auto;
            justify-items: center;
            grid-template-columns: 1fr 1fr;
-           width: 100%;
+           max-width: 100%;
            background-color: #f9f9f9;
        }
        
@@ -163,5 +161,15 @@
            box-shadow: 0px 5px 5px gray;
            margin-top: -2px;
            opacity: 1;
+       }
+       
+       @media screen and (max-width: 1024px) {
+           .contenedorColumnas {
+               width: 100%;
+           }
+           .columna {
+               width: 200px;
+               height: 200px;
+           }
        }
        /* Fin página Home */
